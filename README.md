@@ -1,3 +1,3 @@
 # Home Disney Remake 
 
-<img src="preview.png">
+<img src="./images/preview.png">
