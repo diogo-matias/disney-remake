@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "metropolis";
+  src: url("metropolis.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+
+  font-family: metropolis;
+  line-height: 23px;
+}
+
+.btn {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+
+  border: 1px solid white;
+  background-color: rgb(27, 27, 27, 0.6);
+  border-radius: 5px;
+  padding: 16px 25px;
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+
+  letter-spacing: 1px;
+}
+
+.logo {
+  align-self: center;
+  width: 200px;
+}
+
+h1 {
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 12px;
+  color: grey;
+}
+
+.hero-content {
+  padding-left: 100px;
+  gap: 10px;
+
+  display: flex;
+
+  flex-direction: column;
+  align-items: left;
+}
+
+.hero-content > p {
+  margin-top: 16px;
+}
+
+.precos-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.precos {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  max-width: 100%;
+}
+
+.precos:first-child {
+  display: grid;
+}
+
+.precos:first-child a {
+  align-self: flex-end;
+}
+
+.precos span {
+  color: white;
+  font-size: 25px;
+}
+
+.precos a {
+  background-color: #6421ff;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgb(11, 10, 34);
+
+  display: block;
+  padding: 16.5px 14px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-top: 10px;
+  display: grid;
+}
+
+.precos a:hover {
+  background-color: #9a6eff;
+  color: white;
+}
+
+.precos + .precos {
+  margin-left: 32px;
+}
